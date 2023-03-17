@@ -1,12 +1,17 @@
 import Vue from 'vue'
 import App from './App'
 
-
-
+import Empty from '@/components/common/Empty.vue'
+import CustomBar from '@/components/common/CustomBar.vue'
 import uView from "uview-ui";
 Vue.use(uView);
 
 Vue.config.productionTip = false
+
+Vue.component('empty',Empty)
+Vue.component('custom-bar',CustomBar)
+
+
 
 
 App.mpType = 'app'

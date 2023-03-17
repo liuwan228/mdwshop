@@ -1,6 +1,6 @@
 <template>
 	<view class="empty-wrapper">
-		<image class="empty-img" src="~@/static/imgs/icon-empty.png"></image>
+		<image class="empty-img" src="~@/static/img/icon-empty.png"></image>
 		<text class="empty-text">{{tip}}</text>
 	</view>
 </template>
