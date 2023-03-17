@@ -1,0 +1,79 @@
+
+/* 块元素垂直间隙占位 */
+.gap {
+  height: 24rpx;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
+    height: 0 !important;
+    -webkit-appearance: none;
+    background: transparent;
+}
+
+.pd16{
+	padding: 32rpx;
+}
+.pd12-16{
+	padding: 24rpx 32rpx;
+}
+.font_sub_10{
+	font-size: 20rpx;
+	color: #999999;
+}
+.font_sub_11{
+	font-size: 22rpx;
+	color: #999999;
+	font-weight: 500;
+}
+/* 12px 灰色加粗 */
+.font_sub_12{
+	font-size: 24rpx;
+	color: #999999;
+	font-weight: 500;
+}
+.font_nom_12{
+	font-size: 24rpx;
+	color: #999999;
+}
+.font_sub_white_12{
+	font-size: 24rpx;
+	color: #fff;
+	font-weight: 500;
+}
+.font_title_12{
+	font-size: 24rpx;
+	line-height: 34rpx;
+	color: #222222;
+}
+.font_title_14{
+	font-size: 28rpx;
+	line-height: 40rpx;
+	color: #222222;
+}
+/* 14 px 白色*/
+.font_sub_14{
+	font-weight: 500;
+	font-size:28rpx;
+	color: #fff;
+}
+/* 14 px 黑色*/
+.font_sub_bk_14{
+	font-weight: 600;
+	font-size:28rpx;
+	color: #222222;
+}
+.font_sub_black_14{
+	font-size: 28rpx;
+	color: #222222;
+}
+/* 14px灰色 */
+.font_nom_grey_14{
+	font-size: 28rpx;
+	color: #666666;
+}
+.box-common{
+	padding: 32rpx;
+	background-color:$uni-bg-color;
+}
