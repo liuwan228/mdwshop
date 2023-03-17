@@ -3,18 +3,24 @@
 page {
 	font-family: 'Source Han Sans CN';
 	background-color:  #f3f4f8;
-
+width: 100%;
+height: 100%;
 }
 
 .main{
 	width: 100%;
 	height: 100%;
 	position: relative;
+	
 }
 
 .info{
-	position: absolute;
+	position: fixed;
 	top: 128rpx;
+	left: 0;
+	width: 100%;
+	height: calc(100% - 128rpx);
+	overflow: auto;
 }
 /* 块元素垂直间隙占位 */
 .gap {

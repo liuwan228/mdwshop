@@ -33,12 +33,14 @@
 		align-items: center;
 	}
 	.empty-img {
-		width: 160rpx;
-		height: 160rpx;
-		margin-bottom: 24rpx;
+		width: 260rpx;
+		height: 260rpx;
+		margin-bottom: 32rpx;
+		margin-top: 48rpx;
 	}
 	.empty-text {
 		font-size: $uni-font-size-base;
-		color: $uni-text-color-grey;
+		color:#3D3D3D;
+		line-height: 40rpx;
 	}
 </style>
