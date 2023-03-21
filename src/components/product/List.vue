@@ -1,6 +1,6 @@
 <template>
 	<view class="product_list">
-		<view class="product_item" v-for="(item,index) in PRODUCT_LIST" :key="index">
+		<view class="product_item" v-for="(item,index) in list" :key="index">
 			<view class="img_box">
 				<image :src="item.img_url" mode="scaleToFill" class="img"></image>
 			</view>
@@ -15,26 +15,15 @@
 <script>
 	export default {
 		name: '',
-
+		props: {
+			list: {
+				type: Array,
+				default: () => []
+			}
+		},
 		data() {
 			return {
-				PRODUCT_LIST: [{
-					img_url: '../../static/img/pro.jpg',
-					name: '镜特舒冲洗液',
-					yuan: '29'
-				}, {
-					img_url: '../../static/img/pro.jpg',
-					name: '镜特舒冲洗液',
-					yuan: '29'
-				},{
-					img_url: '../../static/img/pro.jpg',
-					name: '镜特舒冲洗液',
-					yuan: '29'
-				}, {
-					img_url: '../../static/img/pro.jpg',
-					name: '镜特舒冲洗液',
-					yuan: '29'
-				}],
+
 			}
 		},
 		onLoad() {
@@ -55,13 +44,14 @@
 		justify-content: space-evenly;
 		grid-template-columns: repeat(auto-fill, 328rpx);
 		grid-gap: 24rpx;
-    margin-bottom: 32rpx;
+		margin-bottom: 32rpx;
 
 		.product_item {
 			position: relative;
 			width: 328rpx;
+
 			// height: 426rpx;	
-			.img_box{
+			.img_box {
 				width: 328rpx;
 				height: 324rpx;
 				border: 4rpx solid #4776CB;
@@ -69,12 +59,14 @@
 				border-bottom: none;
 				box-sizing: border-box;
 				overflow: hidden;
-				.img{
+
+				.img {
 					width: 100%;
 					height: 100%;
 				}
 			}
-			.title{
+
+			.title {
 				width: 100%;
 				// height: 124rpx;
 				background: #FFFFFF;
@@ -82,13 +74,15 @@
 				border: 4rpx solid #FFFFFF;
 				border-radius: 0rpx 0rpx 10rpx 10rpx;
 				box-sizing: border-box;
-				.name{
+
+				.name {
 					font-size: 28rpx;
 					color: #333333;
 					line-height: 40rpx;
 					margin-bottom: 12rpx;
 				}
-				.yuan{
+
+				.yuan {
 					font-weight: 700;
 					color: #EA3323;
 					line-height: 34rpx;

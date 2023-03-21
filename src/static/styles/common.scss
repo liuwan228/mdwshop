@@ -3,8 +3,8 @@
 page {
 	font-family: 'Source Han Sans CN';
 	background-color:  #f3f4f8;
-width: 100%;
-height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .main{
@@ -16,10 +16,10 @@ height: 100%;
 
 .info{
 	position: fixed;
-	top: 128rpx;
+	top: 204rpx;
 	left: 0;
 	width: 100%;
-	height: calc(100% - 128rpx);
+	height: calc(100% - 204rpx);
 	overflow: auto;
 }
 /* 块元素垂直间隙占位 */
@@ -29,6 +29,10 @@ height: 100%;
 
 .mgt9{
 	margin-top: 18rpx;
+}
+
+.mgl6{
+	margin-left: 12rpx;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -56,7 +60,7 @@ height: 100%;
 /* 12px 灰色加粗 */
 .font_sub_12{
 	font-size: 24rpx;
-	color: #999999;
+	color: #666666;
 	font-weight: 500;
 }
 .font_nom_12{
@@ -71,12 +75,12 @@ height: 100%;
 .font_title_12{
 	font-size: 24rpx;
 	line-height: 34rpx;
-	color: #222222;
+	color: #333333;
 }
 .font_title_14{
 	font-size: 28rpx;
 	line-height: 40rpx;
-	color: #222222;
+	color: #333333;
 }
 /* 14 px 白色*/
 .font_sub_14{

@@ -16,4 +16,13 @@
 	/*每个页面公共css */
 	@import "uview-ui/index.scss";
 	@import url("@/static/styles/index.scss");
+		uni-checkbox .uni-checkbox-input {
+		border-radius: 80rpx !important;
+	}
+
+	uni-checkbox.checked .uni-checkbox-input {
+		background-color: #347CED !important;
+		border-color: #347CED !important;
+	}
+
 </style>

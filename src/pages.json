@@ -1,88 +1,102 @@
 {
-	"pages": [
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "首页"
-			}
-		},
-		{
-			"path": "pages/cart/index",
-			"style": {
-				"navigationBarTitleText": "购物车"
-			}
-		},
-		{
-			"path": "pages/classify/index",
-			"style": {
-				"navigationBarTitleText": "分类"
-			}
-		},
-		{
-			"path": "pages/message/index",
-			"style": {
-				"navigationBarTitleText": "社区"
-			}
-		},
-		{
-			"path": "pages/mine/index",
-			"style": {
-				"navigationBarTitleText": "我的"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationStyle": "custom",
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "梦戴维商城",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	},
-	"tabBar": {
-		"color": "#666",
-		"selectedColor": "#007AFF",
-		"backgroundColor": "#f8e3d7",
-		"borderStyle": "white",
-		"list": [
-			{
-				"pagePath": "pages/index/index",
-				"text": "首页",
-				"iconPath": "static/img/tab-finance-on-icon.png",
-				"selectedIconPath": "static/img/tab-finance-on-icon.png",
-				"visible": true
-			},
-			{
-				"pagePath": "pages/cart/index",
-				"text": "购物车",
-				"iconPath": "static/img/tab-finance-on-icon.png",
-				"selectedIconPath": "static/img/tab-finance-on-icon.png",
-				"visible": true
-			},
-			{
-				"pagePath": "pages/classify/index",
-				"text": "分类",
-				"iconPath": "static/img/tab-finance-on-icon.png",
-				"selectedIconPath": "static/img/tab-finance-on-icon.png",
-				"visible": true
-			},
-			{
-				"pagePath": "pages/message/index",
-				"text": "社区",
-				"iconPath": "static/img/tab-finance-on-icon.png",
-				"selectedIconPath": "static/img/tab-finance-on-icon.png",
-				"visible": true
-			},
-			{
-				"pagePath": "pages/mine/index",
-				"text": "我的",
-				"iconPath": "static/img/tab-mine-on-icon.png",
-				"selectedIconPath": "static/img/tab-mine-on-icon.png",
-				"visible": true
-			}
-		]
-	},
-	"lazyCodeLoading": "requiredComponents ",
-	"easycom": {
-		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
-	}
+    "pages" : [
+        {
+            "path" : "pages/index/index",
+            "style" : {
+                "navigationBarTitleText" : "首页"
+            }
+        },
+        {
+            "path" : "pages/cart/index",
+            "style" : {
+                "navigationBarTitleText" : "购物车"
+            }
+        },
+				{
+				    "path" : "pages/cart/address/address",
+				    "style" : {
+				        "navigationBarTitleText" : "地址"
+				    }
+				},
+        {
+            "path" : "pages/classify/index",
+            "style" : {
+                "navigationBarTitleText" : "分类"
+            }
+        },
+        {
+            "path" : "pages/message/index",
+            "style" : {
+                "navigationBarTitleText" : "社区"
+            }
+        },
+        {
+            "path" : "pages/mine/index",
+            "style" : {
+                "navigationBarTitleText" : "我的"
+            }
+        },
+        {
+            "path" : "components/mine/address",
+            "style" : {}
+        }
+    ],
+    "globalStyle" : {
+        "navigationStyle" : "custom",
+        "navigationBarTextStyle" : "black",
+        "navigationBarTitleText" : "梦戴维商城",
+        "navigationBarBackgroundColor" : "#F8F8F8",
+        "backgroundColor" : "#F8F8F8"
+    },
+    "tabBar" : {
+        "color" : "#999999",
+        "selectedColor" : "#3A7BF6",
+        "backgroundColor" : "#FFFFFF",
+        "borderStyle" : "white",
+        "list" : [
+            {
+                "pagePath" : "pages/index/index",
+                "text" : "首页",
+                "iconPath" : "static/img/tab-index-icon.png",
+                "selectedIconPath" : "static/img/tab-index-select-icon.png",
+                "visible" : true
+            },
+            {
+                "pagePath" : "pages/cart/index",
+                "text" : "购物车",
+                "iconPath" : "static/img/tab-cart-icon.png",
+                "selectedIconPath" : "static/img/tab-cart-select-icon.png",
+                "visible" : true
+            },
+            {
+                "pagePath" : "pages/classify/index",
+                "text" : "分类",
+                "iconPath" : "static/img/tab-type-icon.png",
+                "selectedIconPath" : "static/img/tab-type-select-icon.png",
+                "visible" : true
+            },
+            {
+                "pagePath" : "pages/mine/index",
+                "text" : "我的",
+                "iconPath" : "static/img/tab-mine-icon.png",
+                "selectedIconPath" : "static/img/tab-mine-select-icon.png",
+                "visible" : true
+            }
+        ]
+    },
+    "lazyCodeLoading" : "requiredComponents ",
+    "easycom" : {
+        "^u-(.*)" : "uview-ui/components/u-$1/u-$1.vue"
+    },
+    "condition" : {
+        //模式配置，仅开发期间生效
+        "current" : 0, //当前激活的模式(list 的索引项)
+        "list" : [
+            {
+                "name" : "", //模式名称
+                "path" : "", //启动页面，必选
+                "query" : "" //启动参数，在页面的onLoad函数里面得到
+            }
+        ]
+    }
 }
